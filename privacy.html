@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Brain Escape</title>
+  <meta name="description" content="Privacy policy for Brain Escape mobile game.">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-card: #1a2332;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --red: #ef4444;
+      --green: #22c55e;
+      --amber: #f59e0b;
+      --border: #334155;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+    }
+
+    nav {
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+    .nav-logo .red { color: var(--red); }
+    .nav-logo .green { color: var(--green); }
+    .nav-back {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .nav-back:hover { color: var(--text-primary); }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .updated {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      color: var(--red);
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      color: var(--text-primary);
+      font-size: 17px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    ul { padding-left: 24px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--green); }
+    strong { color: var(--text-primary); }
+
+    .notice {
+      background: var(--bg-card);
+      border-left: 3px solid var(--amber);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+
+    .contact {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 24px;
+    }
+
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="red">BRAIN</span> <span class="green">ESCAPE</span></a>
+    <a href="index.html" class="nav-back">← Back to home</a>
+  </div>
+</nav>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: April 15, 2026</p>
+
+  <p>This Privacy Policy describes how Brain Escape ("we," "us," or "the app") collects, uses, and shares your information when you use the Brain Escape mobile application. By using the app, you agree to the practices described in this policy.</p>
+
+  <h2>Information We Collect</h2>
+
+  <h3>Information You Provide</h3>
+  <ul>
+    <li><strong>Email address</strong> — used to create and authenticate your account.</li>
+    <li><strong>Password</strong> — stored and authenticated securely by Firebase Authentication. We never see your plain-text password.</li>
+    <li><strong>Display name and avatar emoji</strong> — visible to other players in-game.</li>
+    <li><strong>Chat messages</strong> — sent to other players via proximity chat or squad chat.</li>
+  </ul>
+
+  <h3>Information Collected Automatically</h3>
+  <ul>
+    <li><strong>Precise location (GPS)</strong> — used to place you on the in-game map and determine proximity to zombies, other players, and quests. Location is shared with other players in the game so they can see your position on the map. Location is required for the game to function.</li>
+    <li><strong>Gameplay data</strong> — level, XP, combat wins/losses, cures administered, distance walked, achievements, inventory items, squad membership, active quests, and similar in-game stats.</li>
+    <li><strong>Device push notification token</strong> — used to send alerts about nearby zombies, infection warnings, and squad invites.</li>
+    <li><strong>Session metadata</strong> — timestamps of activity to determine whether you are "active" on the map.</li>
+  </ul>
+
+  <div class="notice">
+    <strong>We do not collect:</strong> your name, phone number, address, payment information, contacts, photos, or microphone/camera data.
+  </div>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>To operate and provide the game's core functionality (map, combat, quests, squads).</li>
+    <li>To authenticate your account and secure it with password reset and delete-account features.</li>
+    <li>To enable multiplayer features — showing your location, role, and stats to other players in your area.</li>
+    <li>To deliver push notifications about in-game events.</li>
+    <li>To detect and prevent cheating, abuse, and bot activity (anti-teleport movement detection, profanity filtering, rate limits).</li>
+    <li>To fix bugs and improve the game.</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <p>We use the following third-party services, each governed by their own privacy policies:</p>
+  <ul>
+    <li><strong>Firebase Authentication</strong> (Google) — for account sign-in, password reset, and identity management.</li>
+    <li><strong>Cloud Firestore</strong> (Google) — to store your player profile and game state. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></li>
+    <li><strong>Google Maps SDK</strong> — to display the interactive map. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+    <li><strong>Google Places API</strong> — to find real-world points of interest (restaurants, parks, hospitals) for zombie spawn locations and safe zones.</li>
+    <li><strong>Expo Notifications</strong> — for push notification delivery.</li>
+  </ul>
+  <p>We do not sell your personal information to third parties, and we do not share it except as necessary to operate the services listed above.</p>
+
+  <h2>Data Shared With Other Players</h2>
+  <p>The following information is visible to other Brain Escape players:</p>
+  <ul>
+    <li>Your display name</li>
+    <li>Your avatar emoji</li>
+    <li>Your current GPS location (while you are actively playing — we stop broadcasting your location shortly after you log out or close the app)</li>
+    <li>Your role (human or zombie) and level</li>
+    <li>Your public stats (kills, cures, survival time, distance walked) — shown on leaderboards and player profile modals</li>
+    <li>Your chat messages (to players in the relevant channel: 200m proximity or squad-only)</li>
+  </ul>
+
+  <h2>Data Retention</h2>
+  <p>We retain your account data for as long as your account exists. When you delete your account through the in-app Delete Account feature, we:</p>
+  <ul>
+    <li>Immediately delete your player profile, stats, achievements, inventory, and squad membership.</li>
+    <li>Delete your pending squad invitations (sent and received).</li>
+    <li>Delete your authentication credentials.</li>
+  </ul>
+  <p>Messages you sent in chat may remain visible to other players in their chat history for up to 30 minutes (proximity chat) or until the squad is disbanded (squad chat).</p>
+
+  <h2>Children's Privacy</h2>
+  <p>Brain Escape is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete the account.</p>
+  <p>For users aged 13-17, we recommend that a parent or guardian review this Privacy Policy.</p>
+
+  <h2>Your Rights</h2>
+  <ul>
+    <li><strong>Access and portability</strong> — you can view your stats, inventory, and profile within the app at any time.</li>
+    <li><strong>Correction</strong> — edit your display name and avatar in the Profile tab.</li>
+    <li><strong>Deletion</strong> — use the Delete Account feature in the Profile tab to permanently remove your data.</li>
+    <li><strong>Password reset</strong> — request a reset email from the login screen.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>We use industry-standard security measures including encrypted connections (HTTPS), Firebase Authentication, and server-side Firestore Security Rules that prevent other users from reading or modifying private data. No system is perfectly secure, but we design the game so that sensitive account actions require authentication and cannot be performed by other players.</p>
+
+  <h2>Location Data in Detail</h2>
+  <p>Brain Escape is fundamentally a location-based game. Your precise GPS location:</p>
+  <ul>
+    <li>Is required for the game to function.</li>
+    <li>Is shared with other players in your immediate area in real-time so they can see your marker on the map.</li>
+    <li>Is used to calculate proximity for infection, combat range, safe zones, and quests.</li>
+    <li>Is cleared (set to 0,0) when you log out.</li>
+    <li>Is not retained as a history or shared for purposes beyond the game.</li>
+  </ul>
+  <p>You can stop sharing your location at any time by closing the app or revoking location permission in your device settings.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify users via in-app message or email to the address associated with the account. The "Last updated" date at the top of this page reflects the most recent revision.</p>
+
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>If you have questions, concerns, or requests about this policy or your personal data, reach out to:</p>
+    <p><strong>Email:</strong> <a href="mailto:isaacprivett@gmail.com">isaacprivett@gmail.com</a></p>
+  </div>
+</main>
+
+<footer>
+  <p>Brain Escape &copy; 2026. Survive. Cure. Conquer.</p>
+</footer>
+
+</body>
+</html>
