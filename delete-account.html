@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Your Account — Brain Escape</title>
+  <meta name="description" content="Request deletion of your Brain Escape account and data.">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-card: #1a2332;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --red: #ef4444;
+      --green: #22c55e;
+      --amber: #f59e0b;
+      --border: #334155;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+    }
+
+    nav {
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+    .nav-logo .red { color: var(--red); }
+    .nav-logo .green { color: var(--green); }
+    .nav-back {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .nav-back:hover { color: var(--text-primary); }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .lead {
+      color: var(--text-secondary);
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      color: var(--red);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    ul, ol { padding-left: 24px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+
+    a { color: var(--green); }
+    strong { color: var(--text-primary); }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .card-primary {
+      border-color: var(--green);
+      background: rgba(34, 197, 94, 0.05);
+    }
+
+    .card-danger {
+      border-left: 3px solid var(--red);
+    }
+
+    .steps {
+      counter-reset: step;
+      padding-left: 0;
+      list-style: none;
+    }
+    .steps li {
+      counter-increment: step;
+      padding-left: 40px;
+      position: relative;
+      margin-bottom: 14px;
+      color: var(--text-primary);
+    }
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--green);
+      color: #0f172a;
+      border-radius: 50%;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+    }
+
+    .email-link {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-top: 12px;
+    }
+    .email-link:hover { opacity: 0.9; }
+
+    .what-deleted {
+      list-style: none;
+      padding-left: 0;
+    }
+    .what-deleted li {
+      padding-left: 24px;
+      position: relative;
+      color: var(--text-primary);
+    }
+    .what-deleted li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="red">BRAIN</span> <span class="green">ESCAPE</span></a>
+    <a href="index.html" class="nav-back">← Back to home</a>
+  </div>
+</nav>
+
+<main>
+  <h1>Delete Your Account</h1>
+  <p class="lead">You can permanently delete your Brain Escape account and all associated data at any time. Account deletion is immediate and cannot be undone.</p>
+
+  <!-- In-app deletion (preferred) -->
+  <div class="card card-primary">
+    <h2 style="margin-top: 0;">Option 1: Delete In-App (fastest)</h2>
+    <p style="color: var(--text-primary);">The fastest way is to delete your account from within the Brain Escape app itself:</p>
+    <ol class="steps">
+      <li>Open the Brain Escape app and log in</li>
+      <li>Tap the <strong>Profile</strong> tab at the bottom</li>
+      <li>Scroll to the bottom of the Profile screen</li>
+      <li>Tap <strong>"DELETE ACCOUNT"</strong> below the Logout button</li>
+      <li>Enter your password to confirm</li>
+      <li>Tap <strong>"DELETE FOREVER"</strong></li>
+    </ol>
+    <p>Your account will be deleted immediately.</p>
+  </div>
+
+  <!-- Email deletion -->
+  <div class="card">
+    <h2 style="margin-top: 0;">Option 2: Request Deletion by Email</h2>
+    <p>If you cannot access the app, email us and we will delete your account manually:</p>
+
+    <a href="mailto:isaacprivett@gmail.com?subject=Brain%20Escape%20Account%20Deletion%20Request&body=Please%20delete%20my%20Brain%20Escape%20account.%0A%0AEmail%20associated%20with%20account%3A%20%0ADisplay%20name%20(if%20you%20remember%20it)%3A%20%0A%0AI%20confirm%20I%20own%20this%20account%20and%20want%20all%20associated%20data%20permanently%20deleted." class="email-link">
+      ✉️ EMAIL DELETION REQUEST
+    </a>
+
+    <p style="margin-top: 18px;">Include the following in your email:</p>
+    <ul>
+      <li><strong>Email address</strong> associated with your account</li>
+      <li><strong>Display name</strong> (if you remember it)</li>
+      <li>Confirmation that you own the account</li>
+    </ul>
+    <p>We will delete your account within <strong>7 business days</strong> and send you a confirmation email.</p>
+  </div>
+
+  <!-- What gets deleted -->
+  <h2>What Gets Deleted</h2>
+  <p>When your account is deleted, the following is permanently removed:</p>
+  <ul class="what-deleted">
+    <li>Your player profile (email, display name, avatar)</li>
+    <li>Your gameplay stats (level, XP, combat record, achievements)</li>
+    <li>Your inventory (cures, potions, weapons, clothing, trophies)</li>
+    <li>Your squad membership (you'll be removed from any squad)</li>
+    <li>All pending squad invitations (sent and received)</li>
+    <li>Your Firebase authentication account</li>
+    <li>Your current location and session data</li>
+  </ul>
+
+  <!-- What may take longer -->
+  <h2>What May Take Longer</h2>
+  <div class="card card-danger">
+    <p><strong>Chat messages</strong> you previously sent to other players may remain visible to them for up to 30 minutes (proximity chat) or until their squad is disbanded (squad chat). The messages are not tied to your account after deletion — your display name on old messages will still appear historically.</p>
+    <p style="margin-bottom: 0;">We do not retain chat messages on our servers long-term.</p>
+  </div>
+
+  <!-- Undo -->
+  <h2>Can I Recover My Account?</h2>
+  <p>Account deletion is <strong>permanent and cannot be undone</strong>. We do not keep backup copies of deleted accounts. If you want to play again, you'll need to create a new account and start fresh.</p>
+
+  <!-- Contact -->
+  <h2>Questions?</h2>
+  <p>If you have any questions about deletion or your data, email us at <a href="mailto:isaacprivett@gmail.com">isaacprivett@gmail.com</a>.</p>
+  <p>You can also review our <a href="privacy.html">Privacy Policy</a> for details on what data we collect and how it's used.</p>
+</main>
+
+<footer>
+  <p>Brain Escape &copy; 2026. Survive. Cure. Conquer.</p>
+</footer>
+
+</body>
+</html>
